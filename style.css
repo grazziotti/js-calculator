@@ -21,9 +21,12 @@ body {
 }
 
 .display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 150px;
-    padding: 20px;
-    text-align: end;
+    padding: 0px 20px;
+    overflow: hidden;
     font-size: 70px;
     background-color: #fff;
 }
@@ -77,6 +80,7 @@ body {
     }
     .display {
         height: 70vh;
+        align-items: end;
     }
     .calculator-buttons {
         height: 100%;

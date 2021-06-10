@@ -74,12 +74,12 @@ const thereIsDecimal = ()  => display.textContent.indexOf(',') !== -1
 
 const comma = ()  =>{
     if (!thereIsDecimal()) {
-        if (!thereIsValue() || newNumber) {
+        if (!thereIsValue()) {
             addNumber('0')
-            newNumber = false
         } else {
             addValue(',')
         }
+        newNumber = false
     }
 }
 
